@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5002FF"
+    tools:context=".FirstFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4E00FD"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/textview_first"
+            android:layout_width="165dp"
+            android:layout_height="95dp"
+            android:fontFamily="sans-serif"
+            android:text="0"
+            android:textColor="@android:color/background_light"
+            android:textSize="72sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.426"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+
+        <Button
+            android:id="@+id/toast_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="256dp"
+            android:background="@color/buttonBackground"
+            android:text="Toast"
+            android:textColor="@color/buttonBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_first"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="257dp"
+            android:layout_marginEnd="44dp"
+            android:background="@color/buttonBackground"
+            android:text="Random"
+            android:textColor="@color/buttonBackground"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+
+        <Button
+            android:id="@+id/count_button"
+            android:layout_width="95dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="256dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/buttonBackground"
+            android:text="Count"
+            android:textColor="@color/buttonBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/random_button"
+            app:layout_constraintStart_toEndOf="@+id/toast_button"
+            app:layout_constraintTop_toBottomOf="@+id/textview_first"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
